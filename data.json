@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "diya",
+      "price": "200",
+      "imageurl": "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/lamp-img.png"
+    },
+    {
+      "id": 2,
+      "name": "latern",
+      "price": "300",
+      "imageurl": "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diya-img.png"
+    },
+    {
+      "id": 3,
+      "name": "crackers",
+      "price": "400",
+      "imageurl": "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firework-img.png"
+    },
+    {
+      "id": 4,
+      "name": "flower crackers",
+      "price": "500",
+      "imageurl": "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firecracker-img.png"
+    },
+    {
+      "id": 5,
+      "name": "Diwali air baloon",
+      "price": "250",
+      "imageurl": "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firework-img.png"
+    },
+    {
+      "id": 6,
+      "name": "Fire crackers",
+      "price": "600",
+      "imageurl": "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firecracker-img.png"
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "id": 1,
+      "name": "diya",
+      "price": "200",
+      "imageurl": "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/lamp-img.png",
+      "quantity": 4,
+      "fullname": "yamunasami",
+      "email": "yamuna_sami@persistent.com",
+      "mobile": "+918639535190",
+      "address": ""
+    }
+  ]
+}

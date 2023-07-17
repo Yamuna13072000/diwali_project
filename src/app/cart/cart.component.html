@@ -1,0 +1,70 @@
+<nav class="bg-cart">
+    <h6 class="cart-heading">Cart</h6>
+</nav>
+<button class="btn btn-primary" routerLink="/">Back</button>
+<div class="diwali-bottom-section">
+    <div class="diwali-bottom-section-inner">
+        <div *ngFor="let item of cartItems" class="diwali-card-item" >
+            <div>
+                <img src={{item.imageurl}} class="diwali-card-image"/>
+                <h1 class="diwali-card-name">{{item.name}}</h1>
+                <p class="diwali-card-price">Rs {{item.price}}</p>
+                <p>Quantity:{{item.quantity}}</p>
+
+                <div class="btn-container">
+                    <button class="btn btn-danger" (click)="deleteItem(item.id)">Delete</button>
+                    <button class="btn btn-success button-style"  data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="getSingleCartItem(item)" >Buy</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+   -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Billing Details</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+            <form [formGroup]="userAddressForm">
+                <div>
+                    <label class="form-label" for="name" >Name</label>
+                    <br>
+                    <input class="form-control" id="name" type="text" formControlName="fullname"/>
+                </div>
+                <div>
+                    <label class="form-label" for="email" >Email</label>
+                    <br>
+                    <input class="form-control" id="email" type="email" formControlName="email" />
+                </div>
+                <div>
+                    <label class="form-label" for="number" >Mobile No</label>
+                    <br>
+                    <input class="form-control" id="number" type="text" formControlName="mobile" />
+                </div>
+                <div>
+                    <label class="form-label" for="address" >Address</label>
+                    <br>
+                    <textarea class="form-control" id="address" formControlName="address" ></textarea>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary">Close</button>
+          <button type="button" class="btn btn-primary" (click)="buyProduct()" data-bs-dismiss="modal">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>

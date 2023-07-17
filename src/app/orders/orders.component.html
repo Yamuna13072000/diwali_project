@@ -1,0 +1,25 @@
+<nav class="bg-cart">
+    <h6 class="cart-heading">Cart</h6>
+</nav>
+<button class="btn btn-primary" routerLink="/">Back</button>
+
+
+<div class="diwali-bottom-section">
+    <div class="diwali-bottom-section-inner">
+        <div *ngFor="let item of allOrderItems" class="diwali-card-item" >
+            <div class="container_0">
+                <div>
+                    <img src={{item.imageurl}} class="diwali-card-image"/>
+                </div>
+                <div class="container_2">
+                    <p ><span class="span_el">Name: </span>{{item.name}}</p>
+                    <p class="diwali-card-price"><span class="span_el">Price: </span>Rs.{{item.price}}</p>
+                    <p><span class="span_el">Quantity: </span>{{item.quantity}}</p> 
+                </div>               
+            </div>
+            <div class="container_1">
+                <p><span class="span_el">Address: </span>{{item.fullname}}, {{item.mobile}}, {{item.email}}, {{item.address}}</p>
+            </div>
+        </div>
+    </div>
+</div>

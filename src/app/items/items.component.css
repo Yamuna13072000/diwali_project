@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+
+
+
+.diwali-top-section {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-bg.png");
+    height: 30vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.cart-heading{
+    color:white;
+    padding-left: 40px;
+}
+
+.diwali-top-section-heading {
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    width: 250px;
+    padding: 20px;
+}
+
+.diwali-bottom-section {
+    text-align:center;
+    background-color: #e6f6ff;
+    padding:15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.diwali-bottom-section-inner{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.diwali-card-item {
+    text-align: center;
+    background-color: white;
+    width:140px;
+    border-radius: 9px;
+    padding: 16px;
+    margin: 30px;
+}
+
+.diwali-card-image {
+    height: 64px;
+    width: 64px;
+}
+
+.diwali-card-name {
+    color: #616e7c;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.diwali-card-price {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+}
+/* ///////////////////////////////////////////////////////////// */
+
+.model_label{
+    padding-top:2px;
+    padding-right: 15px;
+    font-size: 18px;
+}
+
+.modal-header {
+    border: none !important;
+}
+    
+.modal-footer {
+    border: none !important;
+}
+.modal-dialog{
+    width:350px !important;
+
+}
+
+.minus_icon{
+    /* background-color: rgb(255, 168, 47); */
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.plus_icon{
+    /* background-color: greenyellow; */
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.increment_container{
+    display: flex;
+    flex-direction: row;
+}
+.number_icon{
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    padding-top: 5px;
+}
+.modal-body{
+    display:flex;
+    flex-direction: row;
+}
+.model-content-heading{
+    text-align: center !important;
+    font-size: 35 !important;
+}
+.cart-logo{
+    height: 35px !important;
+    width: 35px !important;
+}
